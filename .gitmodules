@@ -1,0 +1,3 @@
+[submodule "themes/hugOpenProps"]
+	path = themes/hugOpenProps
+	url = https://github.com/ricardoom/hugOpenPropsTheme.git

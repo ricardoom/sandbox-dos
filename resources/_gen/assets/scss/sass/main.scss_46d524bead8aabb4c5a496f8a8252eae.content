@@ -1,0 +1,30 @@
+:root{--fluid-min-width: 320;--fluid-max-width: 1440;--fluid-screen: 100vw;--fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  )}@media screen and (min-width: 1440px){:root{--fluid-screen: calc(var(--fluid-max-width) * 1px)}}:root{--f--3-min: 8.87;--f--3-max: 13.51;--step--3: calc(
+    ((var(--f--3-min) / 16) * 1rem) + (var(--f--3-max) - var(--f--3-min)) *
+      var(--fluid-bp)
+  );--f--2-min: 11.82;--f--2-max: 18.01;--step--2: calc(
+    ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
+      var(--fluid-bp)
+  );--f--1-min: 15.75;--f--1-max: 24.01;--step--1: calc(
+    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+      var(--fluid-bp)
+  );--f-0-min: 21.00;--f-0-max: 32.00;--step-0: calc(
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+      var(--fluid-bp)
+  );--f-1-min: 27.99;--f-1-max: 42.66;--step-1: calc(
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+      var(--fluid-bp)
+  );--f-2-min: 37.31;--f-2-max: 56.86;--step-2: calc(
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+      var(--fluid-bp)
+  );--f-3-min: 49.74;--f-3-max: 75.79;--step-3: calc(
+    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
+  );--f-4-min: 66.30;--f-4-max: 101.03;--step-4: calc(
+    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+      var(--fluid-bp)
+  )}h1,h2,h3,h4{font-family:"jaf-lapture-display","Rockwell","Rockwell Extra Bold","Courier New",Monoco,Courier,monospace}p{font-family:"lemonde-journal",Cambria,"Liberation Serif",Times,Utopia,"Hoefler Text","Nimbus Roman No9 L Regular","Times New Roman",serif;font-weight:var(--font-weight-4);font-style:normal}.stack{display:flex;flex-direction:column;justify-content:flex-start}.stack *{margin-block:0}.stack>*+*{margin-block-start:var(--space, 1.5rem)}.wrapper{margin-left:auto;margin-right:auto;margin-inline:auto;padding-inline:var(--space-m-3xl, 10rem)}.center{box-sizing:content-box;margin-inline:auto;max-inline-size:var(--measure);display:flex;justify-content:center}nav{display:flex;justify-content:start}footer{padding-block:var(--space-m, 10rem)}h1{font-size:var(--step-4)}h1 .subtitle{display:block;font-size:var(--step-0)}.home{padding-block:10rem}.home :where(h1){max-inline-size:calc(var(--size-header-1) / 1.75)}.lasttitle{font-family:"jaf-lapture","Rockwell","Rockwell Extra Bold","Courier New",Monoco,Courier,monospace;font-weight:100;font-style:normal}.subtitle{font-family:"franklin-gothic-urw",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-style:normal}:root{--fluid-min-width: 320;--fluid-max-width: 1140;--fluid-screen: 100vw;--fluid-bp: calc((var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) / (var(--fluid-max-width) - var(--fluid-min-width)))}@media screen and (min-width: 1140px){:root{--fluid-screen: calc(var(--fluid-max-width) * 1px)}}:root{--fc-3xs-min: (var(--fc-s-min) * 0.25);--fc-3xs-max: (var(--fc-s-max) * 0.25);--fc-2xs-min: (var(--fc-s-min) * 0.5);--fc-2xs-max: (var(--fc-s-max) * 0.5);--fc-xs-min: (var(--fc-s-min) * 0.75);--fc-xs-max: (var(--fc-s-max) * 0.75);--fc-s-min: (var(--f-0-min, 21));--fc-s-max: (var(--f-0-max, 24));--fc-m-min: (var(--fc-s-min) * 1.5);--fc-m-max: (var(--fc-s-max) * 1.5);--fc-l-min: (var(--fc-s-min) * 2);--fc-l-max: (var(--fc-s-max) * 2);--fc-xl-min: (var(--fc-s-min) * 3);--fc-xl-max: (var(--fc-s-max) * 3);--fc-2xl-min: (var(--fc-s-min) * 4);--fc-2xl-max: (var(--fc-s-max) * 4);--fc-3xl-min: (var(--fc-s-min) * 6);--fc-3xl-max: (var(--fc-s-max) * 6);--space-3xs: calc(((var(--fc-3xs-min) / 16) * 1rem) + (var(--fc-3xs-max) - var(--fc-3xs-min)) * var(--fluid-bp));--space-2xs: calc(((var(--fc-2xs-min) / 16) * 1rem) + (var(--fc-2xs-max) - var(--fc-2xs-min)) * var(--fluid-bp));--space-xs: calc(((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-xs-max) - var(--fc-xs-min)) * var(--fluid-bp));--space-s: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-s-min)) * var(--fluid-bp));--space-m: calc(((var(--fc-m-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-m-min)) * var(--fluid-bp));--space-l: calc(((var(--fc-l-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-l-min)) * var(--fluid-bp));--space-xl: calc(((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-xl-min)) * var(--fluid-bp));--space-2xl: calc(((var(--fc-2xl-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-2xl-min)) * var(--fluid-bp));--space-3xl: calc(((var(--fc-3xl-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-3xl-min)) * var(--fluid-bp));--space-3xs-2xs: calc(((var(--fc-3xs-min) / 16) * 1rem) + (var(--fc-2xs-max) - var(--fc-3xs-min)) * var(--fluid-bp));--space-2xs-xs: calc(((var(--fc-2xs-min) / 16) * 1rem) + (var(--fc-xs-max) - var(--fc-2xs-min)) * var(--fluid-bp));--space-xs-s: calc(((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-xs-min)) * var(--fluid-bp));--space-s-m: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-s-min)) * var(--fluid-bp));--space-m-l: calc(((var(--fc-m-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-m-min)) * var(--fluid-bp));--space-l-xl: calc(((var(--fc-l-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-l-min)) * var(--fluid-bp));--space-xl-2xl: calc(((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-xl-min)) * var(--fluid-bp));--space-2xl-3xl: calc(((var(--fc-2xl-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-2xl-min)) * var(--fluid-bp));--space-s-l: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-s-min)) * var(--fluid-bp));--space-m-3xl: calc(((var(--fc-m-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-m-min)) * var(--fluid-bp));--space-l-2xl: calc(((var(--fc-l-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-l-min)) * var(--fluid-bp))}:where(html){font-family:var(--font-serif)}
+
+/*# sourceMappingURL=main.css.map */

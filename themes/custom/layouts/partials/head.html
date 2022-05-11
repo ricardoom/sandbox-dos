@@ -1,0 +1,23 @@
+{{ $targetPath := "css/main.css" }}
+{{ $sassRoot := "sass/main.scss" }}
+{{ $sass := resources.Get "sass/main.scss" }}
+{{ $style := $sass | resources.ToCSS }}
+{{ $options := ( dict "targetPath" $targetPath  "outputStyle" "compressed" "enableSourceMap" true ) }}
+{{ $devStyle := resources.Get $sassRoot | resources.ToCSS $options }}
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/open-props"/>
+  <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css"/>
+  <link rel="stylesheet" href="{{ $devStyle.RelPermalink }}">
+  <title>
+    {{ block "title" . }}
+    {{ $title := print  .Title " | " .Site.Title }}
+      {{ if .IsHome }}
+        {{ $title = .Site.Title }}
+      {{ end }}
+      {{ $title }}  
+    {{ end }}
+  </title>
+</head>
