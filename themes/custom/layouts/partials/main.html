@@ -1,0 +1,19 @@
+{{ block "main" . }}
+  {{ $pageContext := "interior-content" }}
+  {{ if .IsHome }}
+    {{ $pageContext = "home-content" }}
+  {{ end }}
+  {{ if .Site.IsServer }}
+    {{ printf "<!-- project main.html  template -->" | safeHTML }}
+  {{ end }}
+  <main class="[ wrapper ][ center ]">
+    <div class="[ stack ]">
+      {{ if (not .IsHome) }}
+      {{ .Title }}
+      {{ end }}
+    <section  class="[ stack ][ {{ $pageContext }}  ]">
+        {{ .Content }}
+    </section>
+    </div>
+  </main>
+{{ end }}

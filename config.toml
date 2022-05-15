@@ -2,3 +2,5 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Sand Box Dos'
 theme = ['custom' , 'hugOpenProps']
+[params]
+  subtitle = "Babas Running Ship"
